@@ -1,0 +1,353 @@
+*{
+    font-family: 'Alkatra', system-ui;
+    padding:0;
+    margin:0;
+}
+header{
+    background-color: black;
+    
+    position: fixed;
+    height:73px;
+    top:0;
+    width:100vw;
+}
+header .box-header{
+    margin:0 auto;
+    padding:0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px 4px 0 0;
+    height:100%;
+    
+}
+header .logo{
+    color:white;
+    
+    font-size:2rem;
+}
+header .nav{
+    color:white;
+    
+}
+header .nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+header .nav ul > li{
+    list-style: none;
+    /* margin: 1rem 1rem; */
+}
+header .nav ul li a{
+    text-decoration: none; /* Remove underline */
+    color: inherit;
+}
+#menu{
+    font-size:36px;
+    color:white;
+    display:none;
+}
+.section-one{
+    /* height:500px; */
+    /* padding-left:13rem;
+    padding-right:13rem; */
+    padding-top:8rem;
+}
+.section-one .one{
+    line-height: 1.28;
+}
+.three{
+    color:red;
+}
+
+.section-one > div{
+    font-size: 4.5rem;
+}
+.section-one .four{
+    margin-top:0.85rem;
+}
+.section-one i{
+    font-size: 4rem;
+}
+.section-one .four a{
+    text-decoration: none; /* Remove underline */
+    color: inherit;
+}
+ .fa-linkedin{
+    margin-right:1.5rem;
+}
+.section-one .five{
+    font-size: 1.8rem;
+    padding: 0.7rem 0.8rem;
+    border: 0 solid;
+    border-radius: 5px;
+    background-color: #EF4444;
+    color: white;
+    cursor: pointer;
+}
+.section-two h2{
+    margin-top: 1.8rem;
+    text-align: center;
+    font-size: 3rem;
+    color:#2563EB
+}
+.outer-box{
+    padding:0 80px;
+    /* margin-left:104px;
+    margin-right:104px; */
+}
+.section-two .question{
+    
+    color:green;
+
+}
+.section-two .content p{
+    color:black;
+    line-height: 1.21;
+}
+.skills{
+    /* padding-left:13rem;
+    padding-right:13rem; */
+}
+.skills h2{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    color:#2563EB;
+    margin-bottom: 2rem;
+}
+.skills-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skills-inner .css-img{
+    margin-left:60px;
+    margin-right:60px;
+}
+.skills-inner-two{
+    margin-top:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.languages{
+    padding-left:13rem;
+    padding-right:13rem;
+}
+.lang-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lang-head h2{
+    margin-top: 1rem;
+    font-size: 3rem;
+    color:#2563EB;
+    margin-bottom: 2rem;
+}
+
+.projects{
+    /* padding-left:13rem;
+    padding-right:13rem; */
+}
+.projects > h2{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 3rem;
+    color:#2563EB;
+    margin-bottom: 2rem;
+}
+.projects .cards{
+    /* height: 400px; */
+    width:100vw;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.cards div{
+    background-color: #86EFAC;
+    border-radius: 8px;
+    height: 380px;
+    width: 369px;
+}
+.cards div h2{
+    color:#6b236b;
+}
+.cards div:hover{
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+}
+.card1{
+    /* margin-right: 5rem;
+    margin-left: 12rem; */
+    margin-right:20px;
+}
+.cards div h2{
+    margin-left:1rem;
+}
+.cards div p{
+    margin-left:1rem;
+}
+.cards div a{
+    margin-left:1rem;
+}
+.cards div img{
+    border-radius: 5px 5px 0 0;
+}
+.projects .cards .git-color{
+    color:rgb(145, 47, 47);
+}
+footer{
+    background-color: black;
+    height: 364px;
+    width:100vw;
+    border-radius:4px;
+    color:white;
+    margin-top:60px;
+}
+footer .center-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+footer .center-container .name
+{
+    font-size: 2rem;
+}
+footer .center-container .connect{
+    font-size: 1rem;
+}
+footer .center-container .links a{
+    text-decoration: none; /* Remove underline */
+    color: inherit;
+    font-size:2.5rem;
+}
+footer .center-container .links a:hover{
+    font-size: 2.8rem;
+    transition: 0.2s;
+}
+footer .center-container .copy-right{
+    color:gray;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width:885px) {
+    .cards{
+        flex-direction: column;
+    }
+    .card1{
+        margin-right:0px;
+        margin-bottom:30px;
+    }
+}
+@media only screen and (max-width:768px) {
+    .skills-inner img{
+        height:72px;
+        width:72px;
+    }
+    .skills-inner-two img{
+        height:72px;
+        width:72px;
+    }
+}
+@media only screen and (min-width:1280px){
+    .outer-box{
+        width:1120px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .box-header{
+        width:1256px;
+    }
+}
+@media only screen and (min-width:1024px) and (max-width:1280px){
+    .outer-box{
+        width:864px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    header .box-header{
+        width:1000px;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1024px){
+    .outer-box{
+        width:608px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    header .box-header{
+        width:744px;
+    }
+}
+@media only screen and (min-width:640px) and (max-width:768px){
+    .outer-box{
+        width:600px;
+        margin-left:auto;
+        margin-right:auto;
+        padding:0 20px;
+    }
+    header .box-header{
+        width: 616px;
+    }
+}
+@media only screen and (max-width:768px) {
+    .section-one > div{
+        font-size: 3rem;
+    }
+    .section-two h2{
+        font-size: 36px;
+    }
+    .size{
+        font-size: 36px;
+    }
+    .skills h2{
+        font-size: 36px;
+    }
+    .lang-head h2{
+        font-size: 36px;
+    }
+    .projects h2{
+        font-size: 36px;
+    }
+}
+@media only screen and (max-width:640px) {
+    .outer-box{
+        padding:0 20px;
+    }
+    .box-header{
+        width:auto;
+    }
+    #menu{
+        display: block;
+    }
+    .ul-css{
+        position:fixed;
+        top: 73px;
+        width:100vw;
+        text-align: center;
+        background-color: black;
+        transition: all .5s;
+        flex-direction: column;
+        left:-100%;
+    }
+    .nav ul.show{
+        left: 0;
+    }
+}
+@media only screen and (min-width:768px) {
+    .size{
+        font-size: 48px;
+    }
+}
+@media (min-width:640px){
+    .ul-css{
+        width:300px;
+    }
+}
